@@ -1,7 +1,7 @@
 /* Tablet e Desktop */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
+    /* hero */
     .hero .column {
         flex-direction: row;
         flex-wrap: wrap;
@@ -14,24 +14,35 @@
     .column .col:first-child {
         width: calc(100% / 3 * 2 - 10px);
     }
+    /* benefits */
+    .benefits .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+    /* planning */
     .planning .col{
         width: 100%;
+    }
+    /* benefits */
+
+    .benefits .container .col {
+        width: calc(100% / 2 - 10px);
     }
 }
 
 /* Desktop */
 
 @media screen and (min-width: 992px){
-    
+    /* general */
     .container{
         max-width: 800px;
     }
-    
+    /* haeder */
     .hamburger-menu{
         display: none;
     }
@@ -39,7 +50,7 @@
     .navbar{
         display: flex;
     }
-
+    /* planning */
     .planning .container{
         max-width: 600px;
         flex-direction: row;
@@ -50,5 +61,8 @@
         width: 50%;
         margin: 0;
     }
-
+    /* benefits */
+    .benefits .container .col {
+        width: calc(100% / 3 - 10px);
+    }
 }
