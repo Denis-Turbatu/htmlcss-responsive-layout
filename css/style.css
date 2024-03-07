@@ -159,3 +159,13 @@ header {
 
 /* CTA */
 
+.cta{
+    background-color: var(--lightpurple-color);
+    padding: 50px 0;
+}
+
+.cta .container{
+    /* debug */
+    height: 600px;
+    background-color: #fff;
+}
