@@ -137,3 +137,9 @@ header {
     background-color: green;
 }
 
+/* BENEFITS */
+
+.benefits{
+    background-color: var(--lightpurple-color);
+    padding: 50px 0;
+}
