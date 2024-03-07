@@ -27,6 +27,11 @@
 /* Desktop */
 
 @media screen and (min-width: 992px){
+    
+    .container{
+        max-width: 800px;
+    }
+    
     .hamburger-menu{
         display: none;
     }
@@ -35,8 +40,8 @@
         display: flex;
     }
 
-    .planning{
-        max-width: 800px;
+    .planning .container{
+        max-width: 600px;
         flex-direction: row;
         align-items: end;
     }
