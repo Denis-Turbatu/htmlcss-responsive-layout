@@ -1,6 +1,28 @@
+/* Tablet e Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .hero .column {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .column .col {
+        width: calc(100% / 3 - 10px);
+    }
+
+    .column .col:first-child {
+        width: calc(100% / 3 * 2 - 10px);
+    }
+}
+
 /* Tablet */
 
-
+@media screen and (min-width: 768px) {
+    .planning .col{
+        width: 100%;
+    }
+}
 
 /* Desktop */
 
@@ -11,6 +33,17 @@
 
     .navbar{
         display: flex;
+    }
+
+    .planning{
+        max-width: 800px;
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .planning .col{
+        width: 50%;
+        margin: 0;
     }
 
 }
