@@ -1,0 +1,16 @@
+/* Tablet */
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 992px){
+    .hamburger-menu{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+}
