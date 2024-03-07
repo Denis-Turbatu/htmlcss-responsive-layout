@@ -19,6 +19,18 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    /* about-us */
+    .about-us .column{
+        flex-direction: row;
+    }
+
+    .about-us .container > section{
+        width: 50%;
+    }
+
+    .about-us .profile{
+        width: 50%;
+    }
 }
 
 /* Tablet */
