@@ -57,6 +57,10 @@
     .benefits .container .col {
         width: calc(100% / 2 - 10px);
     }
+    /* about-us */
+    .about-us .card{
+        margin-left: 30px;
+    }
 }
 
 /* Desktop */

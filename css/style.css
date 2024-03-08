@@ -323,8 +323,54 @@ figure{
     padding: 50px 0;
 }
 
-.about-us .container > section{
-    
+.about-us h2{
+    padding-top: 30px;
+    font-size: 3rem;
+    color: var(--lightpurple-color);
+}
+
+.about-us p {
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+
+.about-us img{
+    max-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    margin: 30px 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us .image-container{
+    position: relative;
+}
+
+.about-us .image-container::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    font-size: 4rem;
+    color: var(--lightpurple-color);
+    top: 0;
+    left: 40%;
+}
+
+.about-us section h3{
+    font-size: 2rem;
+    color: var(--lightpurple-color);
+    margin-bottom: 30px;
+}
+
+.about-us .link-container {
+    margin: 30px 0;
+}
+
+.about-us .link-container a {
+    background-color: var(--lightpurple-color);
+    color: var(--white-color);
 }
 
 /* CTA */
