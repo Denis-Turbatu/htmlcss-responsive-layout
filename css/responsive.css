@@ -35,13 +35,25 @@
 
 /* Tablet */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     /* planning */
     .planning .col{
         width: 100%;
     }
-    /* benefits */
+    /* testimonials */
+    .testimonials .col{
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.25em;
+    }
+    .name-test, .quote{
+        text-align: left;
+    }
+    .testimonials .col section{
+        margin-left: 15px;
+    }
 
+    /* benefits */
     .benefits .container .col {
         width: calc(100% / 2 - 10px);
     }
@@ -49,7 +61,7 @@
 
 /* Desktop */
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) and (max-width: 1920px){
     /* general */
     .container{
         max-width: 800px;
