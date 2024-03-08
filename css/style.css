@@ -8,6 +8,7 @@
     --lightblue-color: #b5ddff;
     --grey-color: #5a6e7f;
     --yellow-color: #fdc15f;
+    --darkgrey-color: #222222;
 }
 
 /* RESET */
@@ -420,5 +421,15 @@ figure{
     color: var(--lightpurple-color);
 }
 
+
 /* FOOTER */
 
+.footer {
+    background-color: var(--darkgrey-color);
+    height: 100%;
+}
+
+.footer .container p{
+    padding: 30px 0;
+    color: var(--white-color);
+}
