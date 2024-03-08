@@ -64,7 +64,7 @@
     }
     /* planning */
     .planning .container{
-        max-width: 600px;
+        max-width: 650px;
         flex-direction: row;
         align-items: end;
     }
