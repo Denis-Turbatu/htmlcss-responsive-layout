@@ -7,6 +7,7 @@
     --black-color: #000000;
     --lightblue-color: #b5ddff;
     --grey-color: #5a6e7f;
+    --yellow-color: #fdc15f;
 }
 
 /* RESET */
@@ -378,24 +379,46 @@ figure{
 .cta{
     background-color: var(--lightpurple-color);
     padding: 50px 0;
+    color: var(--white-color);
 }
 
-.cta .container{
-    /* debug */
-    height: 600px;
-    background-color: #fff;
+.cta section {
+    gap: 40px;
+}
+
+.cta h4 {
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.cta h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.cta h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--yellow-color);
+}
+
+.cta p {
+    line-height: 1.5rem;
+}
+
+.cta .link-container{
+    width: 60%;
+}
+
+.cta .button {
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--lightpurple-color);
 }
 
 /* FOOTER */
 
-footer{
-    /* debug */
-    height: 300px;
-    background-color: yellow;
-}
-
-.footer .container {
-    /* debug */
-    width: 100%;
-    height: 300px;
-}
