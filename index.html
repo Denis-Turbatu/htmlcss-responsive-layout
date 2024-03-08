@@ -1,59 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <title>Resposive Layout</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="flex center-flex">
-      <div class="container flex space-between">
-        <!-- logo -->
-        <div class="logo">
-          <img src="./img/logo.png" alt="logo">
-        </div>
 
-        <!-- navbar-desktop -->
-        <nav class="navbar flex">
-            <ul class="anchor-list flex">
-              <li>
-                <a href="#planning">Planning</a>
-              </li>
-              <li>
-                <a href="#testimonials">Testimonials</a>
-              </li>
-              <li>
-                <a href="#fetures">Features</a>
-              </li>
-              <li>
-                <a href="#about-us">About Us</a>
-              </li>
-              <li>
-                <a class="button" href="">Get Started</a>
-              </li>
-            </ul>
-            
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <title>Resposive Layout</title>
+</head>
 
-        <!-- hamburger-menu -->
-        <div class="hamburger-menu">
-          <a href="">
-              <i class="fa-solid fa-bars"></i>
-            </a>
+<body>
+  <!-- HEADER -->
+  <header class="flex center-flex">
+    <div class="container flex space-between p-t-b-20">
+      <!-- logo -->
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+
+      <!-- navbar-desktop -->
+      <nav class="navbar flex">
+        <ul class="anchor-list flex">
+          <li>
+            <a href="#planning">Planning</a>
+          </li>
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a href="#fetures">Features</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          <li>
+            <a class="button" href="">Get Started</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!-- hamburger-menu -->
+      <div class="hamburger-menu">
+        <a href="">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- /HEADER -->
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container flex column">
+      <!-- col 1 -->
+      <div class="col">
+        <h3 class="title-card p-t-20">Get a demo application</h3>
+        <p class="desc-card p-t-b-20">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis, architecto
+          ad dolore quod, facere totam quas recusandae blanditiis.</p>
+        <button href="" class="button">
+    
+          <i class="fa-brands fa-apple fw600"></i>
+          <span class="fw600">
+            App Store
+          </span>
+        </button>
+        <div class="p-t-20">
+          <img src="./img/phone.png" alt="phone">
         </div>
       </div>
-    </header>
-    <!-- /HEADER -->
+      <!-- col 2 -->
+      <div class="col">
+        <div class="flex center-flex">
+          <i class="fa-solid fa-file-code icon"></i>
+        </div>
 
-    <!-- HERO -->
-    <div class="hero">
+        <h3 class="title-card p-t-20 tac">Clean Code</h3>
+        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+          architecto
+          ad dolore quod, facere totam quas recusandae blanditiis.
+        </p>
+      </div>
+
+      <!-- col 3 -->
+      <div class="col">
+        <div class="flex center-flex">
+          <i class="fa-solid fa-compass-drafting icon"></i>
+        </div>
+        <h3 class="title-card p-t-20 tac">Web Design</h3>
+        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+          architecto
+          ad dolore quod, facere totam quas recusandae blanditiis.
+        </p>
+      </div>
+
+      <!-- col 4 -->
+      <div class="col">
+        <div class="flex center-flex">
+          <i class="fa-solid fa-laptop-code icon"></i>
+        </div>
+        <h3 class="title-card p-t-20 tac">Development</h3>
+        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+          architecto
+          ad dolore quod, facere totam quas recusandae blanditiis.
+        </p>
+      </div>
+
+      <!-- col 5 -->
+      <div class="col">
+        <div class="flex center-flex">
+          <i class="fa-solid fa-bullhorn icon"></i>
+        </div>
+        <h3 class="title-card p-t-20 tac">Branding</h3>
+        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+          architecto
+          ad dolore quod, facere totam quas recusandae blanditiis.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /HERO -->
+
+  <!-- MAIN -->
+  <main>
+    <!-- STRATEGIC PLANNING -->
+    <div class="planning">
       <div class="container flex column">
+        <!-- card -->
+        <div class="card">
+          <div class="image"></div>
+          <section></section>
+        </div>
+        <!-- col -->
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      <div class="container">
+        <section></section>
+
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+      <div class="container flex column">
+        <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -61,77 +162,39 @@
         <div class="col"></div>
       </div>
     </div>
-    <!-- /HERO -->
 
-    <!-- MAIN -->
-    <main>
-      <!-- STRATEGIC PLANNING -->
-      <div class="planning">
-        <div class="container flex column">
-          <!-- card -->
+    <!-- ABOUT US -->
+    <div class="about-us">
+      <div class="container flex column">
+        <!-- section -->
+        <section></section>
+        <!-- profile -->
+        <div class="profile">
           <div class="card">
             <div class="image"></div>
             <section></section>
           </div>
-          <!-- col -->
-          <div class="col"></div>
         </div>
       </div>
+    </div>
 
-      <!-- TESTIMONIALS -->
-      <div class="testimonials">
-        <div class="container">
-          <section></section>
-
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
+    <!-- CTA -->
+    <div class="cta">
+      <div class="container">
       </div>
+    </div>
+  </main>
+  <!-- /MAIN -->
 
-      <!-- BENEFITS -->
-      <div class="benefits">
-        <div class="container flex column">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>
-
-      <!-- ABOUT US -->
-      <div class="about-us">
-        <div class="container flex column">
-          <!-- section -->
-          <section></section>
-          <!-- profile -->
-          <div class="profile">
-            <div class="card">
-              <div class="image"></div>
-              <section></section>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="cta">
-        <div class="container">
-        </div>
-      </div>
-    </main>
-    <!-- /MAIN -->
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-        </div>
-      </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+    </div>
+    </div>
     <!-- /FOOTER -->
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/84174ae206.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
