@@ -1,6 +1,7 @@
 /* Tablet e Desktop */
 
 @media screen and (min-width: 768px) {
+
     /* hero */
     .hero .column {
         flex-direction: row;
@@ -14,21 +15,39 @@
     .column .col:first-child {
         width: calc(100% / 3 * 2 - 10px);
     }
+
+    /* testimonials */
+    .testimonials .col {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.25em;
+    }
+
+    .name-test,
+    .quote {
+        text-align: left;
+    }
+
+    .testimonials .col section {
+        margin-left: 15px;
+    }
+
     /* benefits */
-    .benefits .container{
+    .benefits .container {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     /* about-us */
-    .about-us .column{
+    .about-us .column {
         flex-direction: row;
     }
 
-    .about-us .container > section{
+    .about-us .container>section {
         width: 50%;
     }
 
-    .about-us .profile{
+    .about-us .profile {
         width: 50%;
     }
 }
@@ -36,61 +55,64 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
     /* planning */
-    .planning .col{
+    .planning .col {
         width: 100%;
-    }
-    /* testimonials */
-    .testimonials .col{
-        display: flex;
-        align-items: center;
-        padding-bottom: 1.25em;
-    }
-    .name-test, .quote{
-        text-align: left;
-    }
-    .testimonials .col section{
-        margin-left: 15px;
     }
 
     /* benefits */
     .benefits .container .col {
         width: calc(100% / 2 - 10px);
     }
+
     /* about-us */
-    .about-us .card{
+    .about-us .card {
         margin-left: 30px;
+    }
+
+    .about-us .image-container::after {
+        left: 50%;
     }
 }
 
 /* Desktop */
 
-@media screen and (min-width: 992px) and (max-width: 1920px){
+@media screen and (min-width: 992px) {
+
     /* general */
-    .container{
+    .container {
         max-width: 800px;
     }
-    /* haeder */
-    .hamburger-menu{
+
+    /* header */
+    .hamburger-menu {
         display: none;
     }
 
-    .navbar{
+    .navbar {
         display: flex;
     }
+
     /* planning */
-    .planning .container{
+    .planning .container {
         max-width: 650px;
         flex-direction: row;
         align-items: end;
     }
 
-    .planning .col{
+    .planning .col {
         width: 50%;
         margin: 0;
     }
+
     /* benefits */
     .benefits .container .col {
         width: calc(100% / 3 - 10px);
+    }
+
+    /* about-us */
+    .about-us .profile {
+        padding-left: 2.5em;
     }
 }

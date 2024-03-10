@@ -1,6 +1,8 @@
 /* ROOT */
 
 :root {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
     --blue-color: #0084fd;
     --lightpurple-color: #9792e4;
     --white-color: #ffffff;
@@ -13,14 +15,15 @@
 
 /* RESET */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "PT Sans", sans-serif;
+    font-size: 1.6rem;
 }
 
 img {
@@ -28,219 +31,229 @@ img {
     display: block;
 }
 
+p {
+    line-height: 1.875em;
+}
+
 /* UTILITY */
 
-.container{
+.container {
     width: 90%;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-
-.center-flex{
+.flex-center {
     justify-content: center;
     align-items: center;
 }
 
-.space-between{
-    justify-content: space-between;
+.tac {
+    text-align: center;
 }
 
-.p-t-b-20{
-    padding: 1.25em 0;
+.ptb30{
+    padding: 1.875em 0;
 }
 
-.p-t-20{
-    padding-top: 20px;
+.mtb30 {
+    margin: 1.875em 0;
 }
 
-.mi-auto{
+.ptb50 {
+    padding: 3.125em 0;
+}
+
+.pt20 {
+    padding-top: 1.25em;
+}
+
+.pb20{
+    padding-bottom: 2rem;
+}
+
+.mi-auto {
     margin: 0 auto;
 }
 
 .col {
     border-radius: 20px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     width: 100%;
-    padding: 1.25em 2.1875em 0 2.1875em;
+    padding: 2.1875em 2.1875em 0;
 }
 
 .button {
-    background-color: var(--white-color);
+    background-color: var(--blue-color);
     padding: 10px;
     border-radius: 25px;
     text-decoration: none;
+    color: var(--white-color);
+}
+
+.light-btn{
+    background-color: var(--white-color);
+}
+
+.text-grey{
+    color: var(--grey-color);
+}
+
+.text-black {
     color: var(--black-color);
+}
+
+.text-white {
+    color: var(--white-color);
+}
+
+.text-blue {
+    color: var(--blue-color);
+}
+
+.text-purple {
+    color: var(--lightpurple-color);
+}
+
+.bgc-lightblue {
+    background-color: var(--lightblue-color);
+}
+
+.bgc-blue {
+    background-color: var(--blue-color);
+}
+
+.bgc-white {
+    background-color: var(--white-color);
+}
+
+.bgc-purple {
+    background-color: var(--lightpurple-color);
 }
 
 /* HEADER */
 
-header {
-    background-color: var(--blue-color);
+header > div {
+    justify-content: space-between;
 }
 
-.logo img{
+.logo img {
     display: block;
 }
 
-.hamburger-menu a{
-    line-height: 40px;
-    font-size: 2rem;
-    color: var(--white-color);
-}
-
-.navbar{
+.hamburger-menu input {
     display: none;
 }
 
-.anchor-list{
-    gap: 30px;
+.hamburger-menu label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    font-size: 3.2rem;
+    line-height: 40px;
+    color: var(--white-color);
+}
+
+.hamburger-menu input:checked + label::before {
+    content: "\58";
+}
+
+.navbar {
+    display: none;
+}
+
+.anchor-list {
+    gap: 1.875em;
 }
 
 .anchor-list li {
     list-style-type: none;
-    line-height: 40px;
+    line-height: 2.5em;
 }
 
-.anchor-list li a{
+.anchor-list li a {
     text-decoration: none;
-    color: var(--white-color);
-}
-
-.anchor-list li .button {
-    text-decoration: none;
-    color: var(--black-color);
 }
 
 /* HERO */
 
-.hero{
-    background-color: #fff;
-    padding: 30px 0 50px;
-    flex-direction: column;
-}
-
-.hero .col {
-    background-color: var(--lightblue-color);
-}
-
-.hero .col button{
-    width: 60%;
+.hero .col a {
+    padding-inline: 2.5em;
     border: none;
+    font-weight: 600;
 }
 
-.title-card{
-    font-size: 1.5rem;
-    color: var(--blue-color);
+.title-card {
+    font-size: 2.5rem;
 }
 
 .desc-card {
-    line-height: 1.875em;
-    font-weight: 600;
-    color: var(--grey-color);
-}
-
-.fw600{
     font-weight: 600;
 }
 
-.tac{
-    text-align: center;
-}
-
-.icon{
-    font-size: 4rem;
+.icon {
+    font-size: 6.5rem;
     display: inline;
-    color: var(--blue-color);
 }
 
 /* MAIN */
 
 /* STRATEGIC PLANNING */
 
-.planning{
-    background-color: var(--lightpurple-color);
-    padding: 50px 0;
-}
-
-.title-strategic{
+.title-strategic {
     margin: 1.5em 0;
-    font-size: 2.5rem;
-    color: var(--white-color);
+    font-size: 4rem;
 }
 
-.desc-strategic{
-    line-height: 1.875em;
-    color: var(--white-color);
-}
-
-.planning .col{
-    background-color: white;
-        margin-top: 40px;
-        border-radius: 60px;
+.planning .col {
+    margin-top: 40px;
+    border-radius: 60px;
 }
 
 .title-planning-dev {
-    font-size: 1.5rem;
-    padding: 30px 0;
+    font-size: 2.5rem;
 }
 
-.desc-planning-dev{
+.desc-planning-dev {
     font-style: italic;
 }
 
-.arrow-down{
+.arrow-down {
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin: 30px 0;
-    background-color: var(--lightpurple-color);
+    cursor: pointer;
 }
 
-.col .arrow-down .fa-arrow-down{
+.col .arrow-down .fa-arrow-down {
     line-height: 50px;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 /* TESTIMONIALS */
 
-.testimonials {
-    padding: 50px 0;
-}
-
-.testimonials h4{
+.testimonials h4 {
     font-weight: 400;
 }
 
 .testimonials h2 {
-    font-size: 2.5rem;
-    color: var(--lightpurple-color);
-    margin: 30px 0;
+    font-size: 4rem;
 }
 
 .testimonials p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
 }
 
-.testimonials .col{
-    background-color: var(--lightpurple-color);
-}
-
-figure{
-    padding-bottom: 20px;
-}
-
-.testimonials .image-profile img{
+.testimonials .image-profile img {
     max-width: 200px;
     min-height: 200px;
     margin-inline: auto;
@@ -249,103 +262,54 @@ figure{
     object-position: center;
 }
 
-.name-test{
+.name-test {
     font-weight: 600;
-    color: var(--white-color);
-    padding-bottom: 20px;
 }
 
-.quote{
-    font-size: 1.2rem;
-    color: var(--white-color);
-    padding-bottom: 20px;
+.quote {
+    font-size: 1.8rem;
 }
 
-.quote::before{
+.quote::before, .quote::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    content: "";
+    font-size: 2.5rem;
+}
+
+.quote::before {
     content: "\f10d";
-    font-size: 1.5rem;
-    color: var(--white-color);
 }
 
 .quote::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
     content: "\f10e";
-    font-size: 1.5rem;
-    color: var(--white-color);
 }
 
 /* BENEFITS */
 
-.benefits{
-    background-color: var(--lightpurple-color);
-    padding: 50px 0;
+.benefits h3 {
+    font-size: 5rem;
 }
 
-.benefits .col {
-    background-color: var(--white-color);
+.benefits h4 {
+    font-size: 2.5rem;
 }
-
-.benefits h2 {
-    color: var(--white-color);
-    margin-bottom: 30px;
-}
-
-.benefits h3{
-    color: var(--lightpurple-color);
-    font-size: 3rem;
-}
-
-.benefits h4{
-    color: var(--lightpurple-color);
-    font-size: 1.5rem;
-}
-
-.benefits  .button {
-    background-color: var(--lightpurple-color);
-    color: white;
-}
-
-.benefits p {
-    line-height: 1.5rem;
-    color: var(--grey-color);
-}
-
-.benefits .container-btn{
-    margin: 30px 0;
-}
-
-.benefits
 
 /* ABOUT-US */
 
-.about-us{
-    padding: 50px 0;
+.about-us h2 {
+    font-size: 5rem;
 }
 
-.about-us h2{
-    padding-top: 30px;
-    font-size: 3rem;
-    color: var(--lightpurple-color);
-}
-
-.about-us p {
-    line-height: 2rem;
-    margin-bottom: 30px;
-}
-
-.about-us img{
+.about-us img {
     max-width: 200px;
     min-height: 200px;
     border-radius: 50%;
-    margin: 30px 0;
     object-fit: cover;
     object-position: center;
 }
 
-.about-us .image-container{
+.about-us .image-container {
     position: relative;
 }
 
@@ -360,28 +324,11 @@ figure{
     left: 40%;
 }
 
-.about-us section h3{
+.about-us section h3 {
     font-size: 2rem;
-    color: var(--lightpurple-color);
-    margin-bottom: 30px;
-}
-
-.about-us .link-container {
-    margin: 30px 0;
-}
-
-.about-us .link-container a {
-    background-color: var(--lightpurple-color);
-    color: var(--white-color);
 }
 
 /* CTA */
-
-.cta{
-    background-color: var(--lightpurple-color);
-    padding: 50px 0;
-    color: var(--white-color);
-}
 
 .cta section {
     gap: 40px;
@@ -389,47 +336,30 @@ figure{
 
 .cta h4 {
     font-weight: 400;
-    color: var(--grey-color);
 }
 
 .cta h3 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .cta h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--yellow-color);
-}
-
-.cta p {
-    line-height: 1.5rem;
-}
-
-.cta .link-container{
-    width: 60%;
 }
 
 .cta .button {
     display: inline-block;
-    padding: 20px;
+    padding: 1.5em 3em;
     width: 100%;
     border-radius: 40px;
     font-weight: 600;
-    font-size: 1.2rem;
-    color: var(--lightpurple-color);
+    font-size: 1.8rem;
 }
-
 
 /* FOOTER */
 
 .footer {
     background-color: var(--darkgrey-color);
-    height: 100%;
-}
-
-.footer .container p{
-    padding: 30px 0;
-    color: var(--white-color);
 }

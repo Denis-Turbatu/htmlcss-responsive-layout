@@ -1,122 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Responsive Layout</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="bgc-blue">
+      <div class="container flex ptb30">
+        <!-- logo -->
+        <div class="logo">
+          <img draggable="false" src="./assets/img/logo.png" alt="logo" />
+        </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/responsive.css" />
-  <title>Resposive Layout</title>
-</head>
+        <!-- navbar-desktop -->
+        <nav class="navbar flex">
+          <ul class="anchor-list flex">
+            <li>
+              <a class="text-white" href="#planning">Planning</a>
+            </li>
+            <li>
+              <a class="text-white" href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a class="text-white" href="#benefits">Features</a>
+            </li>
+            <li>
+              <a class="text-white" href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a class="button light-btn text-black
+              " href="">Get Started</a>
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <!-- HEADER -->
-  <header class="flex center-flex">
-    <div class="container flex space-between p-t-b-20">
-      <!-- logo -->
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo">
+        <!-- hamburger-menu -->
+        <div class="hamburger-menu">
+          <input type="checkbox" id="ham-menu">
+          <label for="ham-menu"></label>
+          </input>
+        </div>
       </div>
+    </header>
+    <!-- /HEADER -->
 
-      <!-- navbar-desktop -->
-      <nav class="navbar flex">
-        <ul class="anchor-list flex">
-          <li>
-            <a href="#planning">Planning</a>
-          </li>
-          <li>
-            <a href="#testimonials">Testimonials</a>
-          </li>
-          <li>
-            <a href="#fetures">Features</a>
-          </li>
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          <li>
-            <a class="button" href="">Get Started</a>
-          </li>
-        </ul>
-
-      </nav>
-
-      <!-- hamburger-menu -->
-      <div class="hamburger-menu">
-        <a href="">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- /HEADER -->
-
-  <!-- HERO -->
-  <div class="hero">
+    <!-- HERO -->
+  <div class="hero ptb30">
     <div class="container flex column">
       <!-- col 1 -->
-      <div class="col">
-        <h3 class="title-card p-t-20">Get a demo application</h3>
-        <p class="desc-card p-t-b-20">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis, architecto
+      <div class="col bgc-lightblue">
+        <h3 class="title-card text-blue">Get a demo application</h3>
+        <p class="desc-card ptb30 text-grey">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis, architecto
           ad dolore quod, facere totam quas recusandae blanditiis.</p>
-        <button href="" class="button">
-
-          <i class="fa-brands fa-apple fw600"></i>
-          <span class="fw600">
+        <a href="" class="button">
+          <i class="fa-brands fa-apple"></i>
+          <span>
             App Store
           </span>
-        </button>
-        <div class="p-t-20">
-          <img src="./img/phone.png" alt="phone">
+        </a>
+        <div class="pt20">
+          <img src="./assets/img/phone.png" alt="phone">
         </div>
       </div>
       <!-- col 2 -->
-      <div class="col">
-        <div class="flex center-flex">
-          <i class="fa-solid fa-file-code icon"></i>
+      <div class="col bgc-lightblue">
+        <div class="flex flex-center">
+          <i class="fa-solid fa-file-code icon text-blue"></i>
         </div>
 
-        <h3 class="title-card p-t-20 tac">Clean Code</h3>
-        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+        <h3 class="title-card text-blue pt20 tac">Clean Code</h3>
+        <p class="desc-card text-grey ptb30 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
           architecto
           ad dolore quod, facere totam quas recusandae blanditiis.
         </p>
       </div>
 
       <!-- col 3 -->
-      <div class="col">
-        <div class="flex center-flex">
-          <i class="fa-solid fa-compass-drafting icon"></i>
+      <div class="col bgc-lightblue">
+        <div class="flex flex-center">
+          <i class="fa-solid fa-compass-drafting icon text-blue"></i>
         </div>
-        <h3 class="title-card p-t-20 tac">Web Design</h3>
-        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+        <h3 class="title-card text-blue pt20 tac">Web Design</h3>
+        <p class="desc-card text-grey ptb30 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
           architecto
           ad dolore quod, facere totam quas recusandae blanditiis.
         </p>
       </div>
 
       <!-- col 4 -->
-      <div class="col">
-        <div class="flex center-flex">
-          <i class="fa-solid fa-laptop-code icon"></i>
+      <div class="col bgc-lightblue">
+        <div class="flex flex-center">
+          <i class="fa-solid fa-laptop-code icon text-blue"></i>
         </div>
-        <h3 class="title-card p-t-20 tac">Development</h3>
-        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+        <h3 class="title-card text-blue pt20 tac">Development</h3>
+        <p class="desc-card text-grey ptb30 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
           architecto
           ad dolore quod, facere totam quas recusandae blanditiis.
         </p>
       </div>
 
       <!-- col 5 -->
-      <div class="col">
-        <div class="flex center-flex">
-          <i class="fa-solid fa-bullhorn icon"></i>
+      <div class="col bgc-lightblue">
+        <div class="flex flex-center">
+          <i class="fa-solid fa-bullhorn icon text-blue"></i>
         </div>
-        <h3 class="title-card p-t-20 tac">Branding</h3>
-        <p class="desc-card p-t-b-20 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
+        <h3 class="title-card text-blue pt20 tac">Branding</h3>
+        <p class="desc-card text-grey ptb30 tac">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ratione nobis,
           architecto
           ad dolore quod, facere totam quas recusandae blanditiis.
         </p>
@@ -128,36 +121,36 @@
   <!-- MAIN -->
   <main>
     <!-- STRATEGIC PLANNING -->
-    <div class="planning">
+    <div id="planning" class="planning ptb50 bgc-purple">
       <div class="container flex column">
         <!-- card -->
         <div>
           <!-- image -->
           <div class="image">
-            <img src="./img/planning1.png" alt="girl-sending-emails-with-a-laptop">
+            <img src="./assets/img/planning1.png" alt="girl-sending-emails-with-a-laptop">
           </div>
           <!-- section -->
           <section>
-            <h2 class="title-strategic">Strategic Planning</h2>
-            <p class="desc-strategic">Egestase dui id ornare arcu odio. In tellus integer freugiat scelerisque varius
+            <h2 class="title-strategic text-white">Strategic Planning</h2>
+            <p class="desc-strategic text-white">Egestase dui id ornare arcu odio. In tellus integer freugiat scelerisque varius
               morbi enim nunc. Habitasse platea citumst quisque sagittis. Interdum velit euismod in pellentesque massa
               placerat duis. Quis viverra nibh cras pulvinar mattis.</p>
           </section>
         </div>
 
         <!-- col -->
-        <div class="col">
+        <div class="col bgc-white">
           <!-- image -->
           <div class="image">
-            <img src="./img/planning2.png" alt="guy-finding-ideas">
+            <img src="./assets/img/planning2.png" alt="guy-finding-ideas">
           </div>
           <!-- section -->
           <section class="tac">
-            <h3 class="title-planning-dev">App Development</h3>
+            <h3 class="title-planning-dev ptb30">App Development</h3>
             <p class="desc-planning-dev">Develop an on-demand app for your delivery business to reach your targeted
               customers without any interruption.</p>
-            <a class="arrow-down">
-              <i class="fa-solid fa-arrow-down"></i>
+            <a class="arrow-down mtb30 bgc-purple" href="#testimonials">
+              <i class="fa-solid fa-arrow-down text-black"></i>
             </a>
           </section>
         </div>
@@ -165,162 +158,168 @@
     </div>
 
     <!-- TESTIMONIALS -->
-    <div class="testimonials">
+    <div id="testimonials" class="testimonials ptb50">
       <div class="container">
         <section class="tac">
           <h4>TESTIMONIALS</h4>
-          <h2>We are committed expert partners</h2>
-          <p>
+          <h2 class="mtb30 text-purple">We are committed expert partners</h2>
+          <p class="pb20">
             We place huge value on strong relationships and have seen the benefit they bring to our business. Customer
             feedback is vital in helping us to get it right.
           </p>
         </section>
         <!-- col 1 -->
-        <div class="col">
-          <figure class="image-profile">
-            <img src="./img/testimonial1.jpg" alt="random-guy">
+        <div class="col bgc-purple">
+          <figure class="image-profile pb20">
+            <img src="./assets/img/testimonial1.jpg" alt="random-guy">
           </figure>
           <section>
-            <blockquote class="quote tac">
+            <!-- Quote -->
+            <blockquote class="quote text-white pb20 tac">
               Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
               Praesent semper feugiat nibh pulvinar proin.
             </blockquote>
-            <p class="name-test tac">NAT REYNOLDS</p>
+            <!-- Name -->
+            <p class="name-test text-white pb20 tac">NAT REYNOLDS</p>
           </section>
         </div>
         <!-- col 2 -->
-        <div class="col">
+        <div class="col bgc-purple">
           <figure class="image-profile">
-            <img src="./img/testimonial2.jpg" alt="random-girl">
+            <img src="./assets/img/testimonial2.jpg" alt="random-girl">
           </figure>
           <section>
-            <blockquote class="quote tac">
+            <!-- Quote -->
+            <blockquote class="quote tac pb20 text-white pb20 text-white">
               Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
               Praesent semper feugiat nibh pulvinar proin.
             </blockquote>
-            <p class="name-test tac">CELIA ALMEDA</p>
+            <!-- Name -->
+            <p class="name-test tac pb20 text-white pb20 text-white">CELIA ALMEDA</p>
           </section>
         </div>
         <!-- col 3 -->
-        <div class="col">
+        <div class="col bgc-purple">
           <figure class="image-profile">
-            <img src="./img/testimonial3.jpg" alt="random-guy">
+            <img src="./assets/img/testimonial3.jpg" alt="random-guy">
           </figure>
           <section>
-            <blockquote class="quote tac">
+            <!-- Quote -->
+            <blockquote class="quote tac pb20 text-white pb20 text-white">
               Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum.
               Praesent semper feugiat nibh pulvinar proin.
             </blockquote>
-            <p class="name-test tac">BOB ROBERTS</p>
+            <!-- Name -->
+            <p class="name-test tac pb20 text-white pb20 text-white">BOB ROBERTS</p>
           </section>
         </div>
       </div>
     </div>
 
     <!-- BENEFITS -->
-    <div class="benefits">
-      <h2 class="tac">Benefits of working with us</h2>
+    <div id="benefits" class="benefits ptb50  bgc-purple">
+      <h2 class="tac ptb30 text-white">Benefits of working with us</h2>
       <div class="container flex column">
         <!-- col 1 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>01</h3>
-            <h4>High Quality</h4>
-            <p>
+            <h3 class="text-purple pb20">01</h3>
+            <h4 class="text-purple pb20">High Quality</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
         <!-- col 2 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>02</h3>
-            <h4>Creative Team</h4>
-            <p>
+            <h3 class="text-purple pb20">02</h3>
+            <h4 class="text-purple pb20">Creative Team</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
         <!-- col 3 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>03</h3>
-            <h4>Amazing Results</h4>
-            <p>
+            <h3 class="text-purple pb20">03</h3>
+            <h4 class="text-purple pb20">Amazing Results</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
         <!-- col 4 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>04</h3>
-            <h4>Best Pricing</h4>
-            <p>
+            <h3 class="text-purple pb20">04</h3>
+            <h4 class="text-purple pb20">Best Pricing</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
         <!-- col 5 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>05</h3>
-            <h4>Innovations</h4>
-            <p>
+            <h3 class="text-purple pb20">05</h3>
+            <h4 class="text-purple pb20">Innovations</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
         <!-- col 6 -->
-        <div class="col">
+        <div class="col bgc-white">
           <section>
-            <h3>06</h3>
-            <h4>24/7 Support</h4>
-            <p>
+            <h3 class="text-purple pb20">06</h3>
+            <h4 class="text-purple pb20">24/7 Support</h4>
+            <p class="text-grey">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit eveniet obcaecati minima,
               velit sint! Obcaecati placeat optio minima, assumenda eligendi iste porro tempore.
             </p>
           </section>
-          <div class="container-btn">
-            <a href="" class="button">More</a>
+          <div class="container-btn ptb30">
+            <a href="" class="button bgc-purple">More</a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ABOUT US -->
-    <div class="about-us">
+    <div id="about-us" class="about-us ptb50">
       <div class="container flex column">
         <!-- section -->
         <section>
-          <h2>About Us</h2>
-          <p>
+          <h2 class="pt20 text-purple">About Us</h2>
+          <p class="ptb30">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officiis expedita nam vel doloremque
             porro, delectus temporibus architecto, distinctio eius est et tempore omnis. Ea sit aliquid est. Accusamus,
             quam ullam ex ab adipisci quisquam pariatur distinctio expedita nostrum maiores porro exercitationem ad at
             neque. Illo perferendis laudantium iure tenetur quo debitis fuga mollitia totam sunt.
           </p>
-          <p>
+          <p class="ptb30">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae quam pariatur modi commodi, inventore
             iure eius vero, deleniti animi iusto nesciunt odio facere natus tempora ad perspiciatis tenetur excepturi
             earum maxime. Eos assumenda ipsa veritatis molestias animi, vel debitis, aspernatur doloremque, odio quo
@@ -332,15 +331,15 @@
           <div class="card">
             <figure class="image-profile">
               <div class="image-container">
-                <img src="./img/about.jpg" alt="random-guy">
+                <img class="mtb30" src="./assets/img/about.jpg" alt="random-guy">
               </div>
             </figure>
             <section>
-              <h3>
+              <h3 class="text-purple pb20">
                 I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.
               </h3>
-              <div class="link-container">
-                <a href="" class="button">
+              <div class="link-container ptb30">
+                <a href="" class="button bgc-purple text-white">
                   <i class="fa-brands fa-linkedin"></i>
                   Find me on Linkedin
                 </a>
@@ -351,11 +350,12 @@
       </div>
     </div>
 
+    
     <!-- CTA -->
-    <div class="cta">
+    <div id="cta" class="cta bgc-purple ptb50 text-white">
       <div class="container">
-        <section class="flex center-flex column">
-          <h4>GET STARTED</h4>
+        <section class="flex flex-center column">
+          <h4 class="text-grey">GET STARTED</h4>
           <h3 class="tac">Simple, Trasparent Pricing</h3>
           <h2>It's Free!</h2>
           <p class="tac">
@@ -363,34 +363,31 @@
             with more controls.
           </p>
           <div class="link-container tac">
-            <a href="" class="button">Get Started</a>
+            <a href="" class="button light-btn text-purple">Get Started</a>
           </div>
           <p class="copyright">
-            Copyright 2021 Boolean ● Classe XX ● <a class="privacy" href="#">Privacy
+            Copyright 2021 Boolean ● Classe XX ● <a class="privacy text-white" href="#">Privacy
               Policy</a>
           </p>
         </section>
       </div>
     </div>
   </main>
-  <!-- /MAIN -->
 
   <!-- FOOTER -->
   <div class="footer">
     <div class="container">
-      <p class="tac">
+      <p class="tac text-white ptb30">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab minus sint voluptate necessitatibus nesciunt quisquam tempor.
       </p>
 
-      <p class="tac">
-        <a href="">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit <a href="">Boolean Careers</a>
+      <p class="tac text-white ptb30">
+        <a href="" class="text-white">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit <a href="" class="text-white">Boolean Careers</a>
       </p>
     </div>
     </div>
     <!-- /FOOTER -->
 
-    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/84174ae206.js" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
