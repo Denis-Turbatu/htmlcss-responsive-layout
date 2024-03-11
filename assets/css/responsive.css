@@ -82,7 +82,7 @@
 
     /* general */
     .container {
-        max-width: 800px;
+        max-width: 1000px;
     }
 
     /* header */
@@ -92,6 +92,22 @@
 
     .navbar {
         display: flex;
+    }
+
+    /* hero */
+
+    .hero .container .col:first-child{
+        display: flex;
+    }
+    .desc-phone-container{
+        width: 40%;
+    }
+    .phone-container{
+        width: 60%;
+        display: flex;
+    }
+    .hero .container .col div:last-child img{
+        align-self: flex-end;
     }
 
     /* planning */
